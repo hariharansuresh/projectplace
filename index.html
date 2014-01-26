@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Harish fb</title>
+</head>
+<body>
+<div id = “fb_open” class=“fb” onclick=openfb();>harish </div>
+<script src="http://connect.facebook.net/en_US/all.js">
+<script>
+function openfb(){
+window.open("http://www.facebook.com" , target = "_blank", "width=screen.width-100; height=screen.height-100;" );
+}
+</script>
+ <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '653566551356833',
+          status     : true,
+          xfbml      : true
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         //js.src = "https://connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+
+</body>
+
+</html>
